@@ -45,19 +45,28 @@
 
 <table style="width:100%">
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Required</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <td>peer</td>
+    <td>string</td>
+    <td>user/channel/group <b>username</b> or <b>link</b> (Private links are not supported)</td>
+    <td>✅</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td>type</td>
+    <td>string</td>
+    <td>can be search or info (search type need <b>q</b> parameter to search a query.</td>
+    <td>✅</td>
+  </tr>
+  <tr>
+    <td>q</td>
+    <td>string</td>
+    <td>The word(s) that you want to search them in a channel (use it only when you put 'search' for <b>type</b> parameter.</td>
+    <td>❌</td>
   </tr>
 </table>
 
